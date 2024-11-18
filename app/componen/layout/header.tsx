@@ -18,18 +18,9 @@ const Header = () => {
   return (
     <nav className='relative h-auto z-20 sticky inset-0 backdrop-blur-md py-9 bg-white bg-opacity-90'>
       {/* Background Image */}
-      <div
-        className='hidden md:block absolute'
-        style={{
-          width: "873px",
-          height: "1021px",
-          top: "-75px",
-          left: "1007px",
-          opacity: 0.1,
-          backgroundImage: `url(${bgImage.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}></div>
+      <div className='absolute right-0 hidden sm:block'>
+        <div className="blur-[150px] -z-20 bg-[#05c19cb3] w-64 h-64 rounded-full"></div>
+      </div>
 
       <div className='max-w-screen-xl mx-auto px-4 flex flex-wrap items-center justify-between p-4'>
         {/* Logo */}
