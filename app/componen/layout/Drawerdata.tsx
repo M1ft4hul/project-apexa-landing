@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import telp from "public/telephone.png";
+import Image from "next/image";
 
 interface NavigationItem {
   name: string;
@@ -8,10 +10,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "#home-section", current: false },
-  { name: "About us", href: "#about-section", current: false },
-  { name: "Recipe", href: "#cook-section", current: false },
-  { name: "Gallery", href: "#gallery-section", current: false },
+  { name: "Temukan Dokter", href: "#home-section", current: false },
+  { name: "Layanan", href: "#about-section", current: false },
+  { name: "Artikel", href: "#cook-section", current: false },
+  { name: "Kontak", href: "#gallery-section", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -30,21 +32,42 @@ const Drawerdata = () => {
                 href={item.href}
                 className={classNames(
                   item.current
-                    ? "bg-gray-900 text-purple"
-                    : "text-black hover:bg-gray-700 hover:text-purple",
-                  "block  py-2 rounded-md text-base font-medium"
+                    ? "bg-gray-900 text-[#59859D]"
+                    : "text-black hover:bg-gray-100 hover:text-[#59859D]",
+                  "block py-2 rounded-md text-base font-medium"
                 )}
                 aria-current={item.current ? "page" : undefined}>
                 {item.name}
               </Link>
             ))}
-            <div className='mt-4'></div>
-            <button className='flex justify-center text-base w-full font-medium rounded-full bg-bgpink text-pink py-3 px-4 lg:px-8 navbutton hover:text-white'>
-              Sign in
-            </button>
-            <button className='flex justify-center text-base w-full font-medium rounded-full bg-transparent border border-bgpink text-pink py-3 px-4 lg:px-8 navbutton hover:text-white hover:bg-pink'>
-              Contact us
-            </button>
+
+            <br />
+            <div className='grid grid-rows-2 grid-flow-col items-center ml-7'>
+              <div className='row-span-3'>
+                <button
+                  type='button'
+                  className='text-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 inline-flex items-center me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800'>
+                  <Image
+                    src={telp}
+                    width={25}
+                    height={25}
+                    alt='Emergency Call'
+                  />
+                </button>
+              </div>
+              <div className='col-span-2 text-gray-700 font-semibold'>
+                Panggilan Darurat
+              </div>
+              <div className='col-span-2 text-gray-500'>
+                +62811 601 1212 (24h)
+              </div>
+            </div>
+            <br />
+            <a
+              href=''
+              className='flex justify-center text-base w-full font-normal rounded-full bg-[#169091] hover:bg-[#59859D] focus:outline-none text-white py-3 px-4 lg:px-8 navbutton hover:text-white hover:bg-[#59859D]'>
+              Login/Register
+            </a>
 
             {/* <Contactusform /> */}
           </div>

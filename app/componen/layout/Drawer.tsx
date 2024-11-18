@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "public/logo_rs.png";
+import close from "public/tutup.png";
 
 interface DrawerProps {
   children: ReactNode;
@@ -35,8 +36,9 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
               className='block h-6 w-6'
               onClick={() => {
                 setIsOpen(false);
-              }}
-            />
+              }}>
+              <Image src={close} alt='logo' width={35} height={35}></Image>
+            </button>
           </header>
           <div
             onClick={() => {
