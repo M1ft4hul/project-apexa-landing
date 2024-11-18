@@ -6,6 +6,7 @@ import menu from "public/menu.png";
 import info from "public/info.png";
 import search from "public/search.png";
 import telp from "public/telephone.png";
+import bgImage from "public/logo_gram.png"; // Tambahkan gambar latar belakang
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,21 @@ const Header = () => {
   };
 
   return (
-    <nav className='h-auto z-20 sticky inset-0 backdrop-blur-md py-9 bg-white bg-opacity-90'>
+    <nav className='relative h-auto z-20 sticky inset-0 backdrop-blur-md py-9 bg-white bg-opacity-90'>
+      {/* Background Image */}
+      <div
+        className='hidden md:block absolute'
+        style={{
+          width: "873px",
+          height: "1021px",
+          top: "-75px",
+          left: "1007px",
+          opacity: 0.1,
+          backgroundImage: `url(${bgImage.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}></div>
+
       <div className='max-w-screen-xl mx-auto px-4 flex flex-wrap items-center justify-between p-4'>
         {/* Logo */}
         <a href='' className='flex items-center space-x-3 rtl:space-x-reverse'>
@@ -42,18 +57,21 @@ const Header = () => {
           {/* Additional Icons (Desktop Only) */}
           <div className='hidden md:flex items-center space-x-3'>
             {/* Icon Info */}
-            <button className='rounded-full border border-transparent p-2.5 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
+            <button
+              type='button'
+              className='rounded-full border border-transparent p-2.5 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
               <Image src={info} width={29} height={29} alt='Info' />
             </button>
             {/* Garis Vertikal */}
             <div className='hidden md:block h-10 border-l border-gray-300 mx-4'></div>
             {/* Icon Search */}
-            <button className='rounded-full border border-transparent p-2.5 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
+            <button
+              type='button'
+              className='rounded-full border border-transparent p-2.5 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
               <Image src={search} width={30} height={30} alt='Search' />
             </button>
             {/* Garis Vertikal */}
             <div className='hidden md:block h-10 border-l border-gray-300 mx-4'></div>
-
             {/* Emergency Contact */}
             <div className='grid grid-rows-2 grid-flow-col items-center'>
               <div className='row-span-3'>
