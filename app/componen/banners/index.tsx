@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
-import latar from "public/logo_gram.png";
+import latar from "public/logo_gram_1.png";
 
 const Banner = () => {
   return (
@@ -13,8 +13,7 @@ const Banner = () => {
           <Image
             src={latar}
             alt='rs-image'
-            width={873}
-            height={1021}
+            className='custom-bg'
             // width={463}
             // height={622}
           />

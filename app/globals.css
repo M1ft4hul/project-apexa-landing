@@ -28,6 +28,14 @@ html {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
+/* buat gambar */
+.custom-bg {
+    top: -75px;
+    opacity: 10%;
+    height: 920px;
+    width: 620px;
+}
+
 .card-b {
     background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
 }
