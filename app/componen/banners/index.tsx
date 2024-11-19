@@ -5,6 +5,7 @@ import Link from "next/link";
 import latar from "public/logo_gram_1.png";
 import dokter from "public/baner_dokter.png";
 import apexa from "public/apexa.png";
+import sehat from "public/healthcare.png";
 
 const Banner = () => {
   return (
@@ -43,8 +44,9 @@ const Banner = () => {
               cascade
               damping={1e-1}
               triggerOnce={true}>
-              <p className='text-[#169091] lg:text-lg font-normal mb-2 lg:text-start text-center'>
-                Kesehatan Anda, Prioritas Kami
+              <p className='text-[#169091] lg:text-lg font-normal mb-2 lg:text-start text-center flex items-center space-x-2'>
+                <Image src={sehat} alt='sehat' width={25} height={25}></Image>
+                <span>Kesehatan Anda, Prioritas Kami</span>
               </p>
             </Fade>
             <Fade
