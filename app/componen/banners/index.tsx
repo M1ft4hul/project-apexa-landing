@@ -21,7 +21,7 @@ const Banner = () => {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-12 space-x-1'>
           {/* banner */}
-          <div className='col-span-6 flex justify-center relative'>
+          <div className='col-span-6 flex justify-start relative'>
             <Image
               src={dokter}
               alt='nothing'
@@ -40,7 +40,7 @@ const Banner = () => {
               damping={1e-1}
               triggerOnce={true}>
               <h1 className='text-4xl lg:text-7xl font-semibold mb-5 text-lightgrey md:4px lg:text-start text-center'>
-                Cook anything <br /> with the experts
+                Our Best for <br /> Your Health
               </h1>
             </Fade>
             <Fade

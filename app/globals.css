@@ -35,14 +35,21 @@ html {
     height: 920px;
     width: 620px; */
     width: 873px;
-    height: 1021px;
-    top: -75px;
-    left: 1211px;
+    top: -75px;    
+    left: 1711px;
     opacity: 10%;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .custom-bg {
+        display: none;
+        /* Hilangkan gambar di mode mobile */
+    }
 }
 
 .dokter {
-    margin-top: 13%;
+    margin-top: 20%;
 }
 
 .card-b {
