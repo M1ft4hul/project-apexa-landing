@@ -45,7 +45,12 @@ const Banner = () => {
               damping={1e-1}
               triggerOnce={true}>
               <p className='text-[#169091] lg:text-lg font-normal mb-2 lg:text-start text-center flex items-center space-x-2'>
-                <Image src={sehat} alt='sehat' width={25} height={25}></Image>
+                <Image
+                  src={sehat}
+                  alt='sehat'
+                  width={25}
+                  height={25}
+                  className='mx-auto lg:mx-0'></Image>
                 <span>Kesehatan Anda, Prioritas Kami</span>
               </p>
             </Fade>
