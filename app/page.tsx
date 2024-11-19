@@ -1,9 +1,12 @@
 import Image from "next/image";
-import Hero from "./section/Hero";
+import Banner from "./componen/banners/index";
 
 export default function Home() {
-  return (<>
-    <main>
-  </main>
-  </>)
+  return (
+    <>
+      <main>
+        <Banner />
+      </main>
+    </>
+  );
 }
