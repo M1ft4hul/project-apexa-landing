@@ -45,9 +45,9 @@ const Banner = () => {
               damping={1e-1}
               triggerOnce={true}>
               <div className='grid grid-rows-1 place-items-center lg:place-items-start'>
-                <p className='text-[#169091] lg:text-lg font-normal mt-2 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
+                <p className='text-[#169091] lg:text-lg font-normal mt-3 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
                   <Image src={sehat} alt='sehat' width={25} height={25}></Image>
-                   Kesehatan Anda, Prioritas Kami
+                  Kesehatan Anda, Prioritas Kami
                 </p>
               </div>
             </Fade>
@@ -75,19 +75,67 @@ const Banner = () => {
                 terpercaya dan buat janji sekarang.
               </p>
             </Fade>
+            {/* <Fade
+              direction={"up"}
+              delay={1000}
+              cascade
+              damping={0.1}
+              triggerOnce={true}>
+              <div className='md:flex align-middle justify-center lg:justify-start'>
+                <div className='p-6 bg-white rounded-3xl shadow-xl'>
+                  <button className='text-xl w-full md:w-auto font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-14 mr-6'>
+                    <Link href='#cook-section'>Lets cook</Link>
+                  </button>
+                  <button className='flex border w-full md:w-auto mt-5 md:mt-0 border-pink justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-pink hover:text-white hover:bg-pink'>
+                    <Link href='#about-section'>Explore now</Link>
+                  </button>
+                </div>
+              </div>
+            </Fade> */}
             <Fade
               direction={"up"}
               delay={1000}
               cascade
-              damping={1e-1}
+              damping={0.1}
               triggerOnce={true}>
               <div className='md:flex align-middle justify-center lg:justify-start'>
-                <button className='text-xl w-full md:w-auto font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-14 mr-6'>
-                  <Link href='#cook-section'>Lets cook</Link>
-                </button>
-                <button className='flex border w-full md:w-auto mt-5 md:mt-0 border-pink justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-pink hover:text-white hover:bg-pink'>
-                  <Link href='#about-section'>Explore now</Link>
-                </button>
+                <div className='p-6 bg-white rounded-3xl drop-shadow-2xl'>
+                  <div className='flex flex-col md:flex-row gap-6'>
+                    {/* Column 1: Cari Dokter */}
+                    <div className='flex flex-col'>
+                      <label
+                        htmlFor='cari-dokter'
+                        className='text-xl font-medium mb-2'>
+                        Cari Dokter
+                      </label>
+                      {/* <select
+                        id='cari-dokter'
+                        className='border border-gray-300 rounded-lg p-3 text-lg'>
+                        <option value='' disabled selected>
+                          Pilih Dokter
+                        </option>
+                        <option value='dokter1'>Dokter 1</option>
+                        <option value='dokter2'>Dokter 2</option>
+                        <option value='dokter3'>Dokter 3</option>
+                      </select> */}
+                    </div>
+
+                    {/* Column 2: Pilih Hari */}
+                    <div className='flex flex-col'>
+                      <label
+                        htmlFor='pilih-hari'
+                        className='text-xl font-medium mb-2'>
+                        Pilih Hari
+                      </label>
+                      {/* <input
+                        type='date'
+                        id='pilih-hari'
+                        className='border border-gray-300 rounded-lg p-3 text-lg'
+                      /> */}
+                    </div>
+                    {/* end */}
+                  </div>
+                </div>
               </div>
             </Fade>
           </div>
