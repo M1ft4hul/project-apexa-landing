@@ -30,10 +30,19 @@ html {
 
 /* buat gambar */
 .custom-bg {
-    top: -75px;
+    /* top: -75px;
     opacity: 10%;
     height: 920px;
-    width: 620px;
+    width: 620px; */
+    width: 873px;
+    height: 1021px;
+    top: -75px;
+    left: 1211px;
+    opacity: 10%;
+}
+
+.dokter {
+    margin-top: 13%;
 }
 
 .card-b {

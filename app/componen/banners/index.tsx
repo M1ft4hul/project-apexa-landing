@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 import latar from "public/logo_gram_1.png";
+import dokter from "public/baner_dokter.png";
 
 const Banner = () => {
   return (
@@ -21,22 +22,12 @@ const Banner = () => {
         <div className='grid grid-cols-1 lg:grid-cols-12 space-x-1'>
           {/* banner */}
           <div className='col-span-6 flex justify-center relative'>
-            <div className='flex bg-white p-2 gap-5 items-center bottom-10 left-10 rounded-xl absolute'>
-              <Image
-                src={"/images/Banner/pizza.svg"}
-                alt='pizza-image'
-                width={68}
-                height={68}
-              />
-              <p className='text-lg font-normal'>
-                More than 500+ <br /> recipes.
-              </p>
-            </div>
             <Image
-              src='/images/Banner/banner-image.png'
+              src={dokter}
               alt='nothing'
-              width={1000}
-              height={805}
+              width={600}
+              height={630}
+              className='dokter'
             />
           </div>
 
