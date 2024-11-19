@@ -45,7 +45,7 @@ const Banner = () => {
               damping={1e-1}
               triggerOnce={true}>
               <div className='grid grid-rows-1 place-items-center lg:place-items-start'>
-                <p className='text-[#169091] lg:text-lg font-normal mt-3 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
+                <p className='text-[#169091] lg:text-lg font-normal mt-6 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
                   <Image src={sehat} alt='sehat' width={25} height={25}></Image>
                   Kesehatan Anda, Prioritas Kami
                 </p>
@@ -75,86 +75,84 @@ const Banner = () => {
                 terpercaya dan buat janji sekarang.
               </p>
             </Fade>
-            {/* <Fade
-              direction={"up"}
-              delay={1000}
-              cascade
-              damping={0.1}
-              triggerOnce={true}>
-              <div className='md:flex align-middle justify-center lg:justify-start'>
-                <div className='p-6 bg-white rounded-3xl shadow-xl'>
-                  <button className='text-xl w-full md:w-auto font-medium rounded-full text-white py-5 px-6 bg-pink lg:px-14 mr-6'>
-                    <Link href='#cook-section'>Lets cook</Link>
-                  </button>
-                  <button className='flex border w-full md:w-auto mt-5 md:mt-0 border-pink justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-pink hover:text-white hover:bg-pink'>
-                    <Link href='#about-section'>Explore now</Link>
-                  </button>
-                </div>
-              </div>
-            </Fade> */}
-            <Fade
-              direction={"up"}
-              delay={1000}
-              cascade
-              damping={0.1}
-              triggerOnce={true}>
-              <div className='md:flex align-middle justify-center lg:justify-start'>
-                <div className='p-6 bg-white rounded-3xl drop-shadow-2xl'>
-                  <div className='flex flex-col md:flex-row gap-6'>
-                    {/* Column 1: Cari Dokter */}
-                    <div className='flex flex-col'>
-                      <label
-                        htmlFor='cari-dokter'
-                        className='text-xl font-medium mb-2'>
-                        Cari Dokter
-                      </label>
-                      <Fade
-                        direction={"up"}
-                        delay={1200}
-                        cascade
-                        damping={1e-1}
-                        triggerOnce={true}>
-                        <div className='relative text-white focus-within:text-white flex flex-row-reverse rounded-full'>
-                          <input
-                            type='Email address'
-                            name='q'
-                            className='py-6 sm:py-8 text-sm w-full text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
-                            placeholder='@ enter your email-address'
-                            autoComplete='off'
-                          />
-                        </div>
-                      </Fade>
-                    </div>
+            <form action='' method='post'>
+              <Fade
+                direction={"up"}
+                delay={1000}
+                cascade
+                damping={0.1}
+                triggerOnce={true}>
+                <div className='md:flex align-middle justify-center lg:justify-start'>
+                  <div className='p-6 bg-white rounded-3xl drop-shadow-2xl'>
+                    <div className='flex flex-col md:flex-row gap-6'>
+                      {/* Column 1: Cari Dokter */}
+                      <div className='flex flex-col'>
+                        <label
+                          htmlFor='cari-dokter'
+                          className='text-xl font-medium mb-2'>
+                          Cari Dokter
+                        </label>
+                        <Fade
+                          direction={"up"}
+                          delay={1200}
+                          cascade
+                          damping={1e-1}
+                          triggerOnce={true}>
+                          <div className='relative text-white focus-within:text-white flex rounded-full'>
+                            <input
+                              type='Email address'
+                              name='q'
+                              className='py-6 sm:py-6 text-normal text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
+                              placeholder='Spesialisasi...'
+                              autoComplete='off'
+                            />
+                          </div>
+                        </Fade>
+                      </div>
 
-                    {/* Column 2: Pilih Hari */}
-                    <div className='flex flex-col'>
-                      <label
-                        htmlFor='pilih-hari'
-                        className='text-xl font-medium mb-2'>
-                        Pilih Hari
-                      </label>
-                      <Fade
-                        direction={"up"}
-                        delay={1200}
-                        cascade
-                        damping={1e-1}
-                        triggerOnce={true}>
-                        <div className='relative text-white focus-within:text-white flex flex-row-reverse  rounded-full'>
-                          <input
-                            type='Email address'
-                            name='q'
-                            className='py-6 sm:py-8 text-sm w-full text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
-                            placeholder='@ enter your email-address'
-                            autoComplete='off'
-                          />
-                        </div>
-                      </Fade>
+                      {/* Column 2: Pilih Hari */}
+                      <div className='flex flex-col'>
+                        <label
+                          htmlFor='pilih-hari'
+                          className='text-xl font-medium mb-2'>
+                          Pilih Hari
+                        </label>
+                        <Fade
+                          direction={"up"}
+                          delay={1200}
+                          cascade
+                          damping={1e-1}
+                          triggerOnce={true}>
+                          <div className='relative text-white focus-within:text-white flex rounded-full'>
+                            <input
+                              type='text'
+                              name='q'
+                              className='py-6 sm:py-6 text-normal text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
+                              placeholder='YY/MM/DD'
+                              autoComplete='off'
+                            />
+                          </div>
+                        </Fade>
+                      </div>
+                      {/* end */}
                     </div>
-                    {/* end */}
                   </div>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+              {/* pencarian */}
+              <Fade
+                direction={"up"}
+                delay={800}
+                cascade
+                damping={1e-1}
+                triggerOnce={true}>
+                <button
+                  type='button'
+                  className='px-6 py-6 mt-7 text-base font-medium text-white inline-flex items-center bg-[#59859D] hover:bg-[#59859D] focus:ring-4 focus:outline-none focus:ring-[#59859D] rounded-full text-center dark:bg-[#59859D] dark:hover:bg-[#44728C] dark:focus:ring-[#44728C]'>
+                  Cari Dokter
+                </button>
+              </Fade>
+            </form>
           </div>
         </div>
       </div>
