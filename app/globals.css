@@ -52,6 +52,10 @@ html {
     margin-top: 20%;
 }
 
+.pencarian {
+    padding-right: 130px;
+}
+
 .card-b {
     background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
 }

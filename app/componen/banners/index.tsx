@@ -108,16 +108,22 @@ const Banner = () => {
                         className='text-xl font-medium mb-2'>
                         Cari Dokter
                       </label>
-                      {/* <select
-                        id='cari-dokter'
-                        className='border border-gray-300 rounded-lg p-3 text-lg'>
-                        <option value='' disabled selected>
-                          Pilih Dokter
-                        </option>
-                        <option value='dokter1'>Dokter 1</option>
-                        <option value='dokter2'>Dokter 2</option>
-                        <option value='dokter3'>Dokter 3</option>
-                      </select> */}
+                      <Fade
+                        direction={"up"}
+                        delay={1200}
+                        cascade
+                        damping={1e-1}
+                        triggerOnce={true}>
+                        <div className='relative text-white focus-within:text-white flex flex-row-reverse rounded-full'>
+                          <input
+                            type='Email address'
+                            name='q'
+                            className='py-6 sm:py-8 text-sm w-full text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
+                            placeholder='@ enter your email-address'
+                            autoComplete='off'
+                          />
+                        </div>
+                      </Fade>
                     </div>
 
                     {/* Column 2: Pilih Hari */}
@@ -127,11 +133,22 @@ const Banner = () => {
                         className='text-xl font-medium mb-2'>
                         Pilih Hari
                       </label>
-                      {/* <input
-                        type='date'
-                        id='pilih-hari'
-                        className='border border-gray-300 rounded-lg p-3 text-lg'
-                      /> */}
+                      <Fade
+                        direction={"up"}
+                        delay={1200}
+                        cascade
+                        damping={1e-1}
+                        triggerOnce={true}>
+                        <div className='relative text-white focus-within:text-white flex flex-row-reverse  rounded-full'>
+                          <input
+                            type='Email address'
+                            name='q'
+                            className='py-6 sm:py-8 text-sm w-full text-black bg-[#F2F7FD] rounded-full pl-4 pencarian focus:outline-none focus:text-black'
+                            placeholder='@ enter your email-address'
+                            autoComplete='off'
+                          />
+                        </div>
+                      </Fade>
                     </div>
                     {/* end */}
                   </div>
