@@ -1,7 +1,7 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "public/logo_rs.png";
 import menu from "public/menu.png";
@@ -31,9 +31,23 @@ function classNames(...classes: string[]) {
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <Disclosure as='nav' className='navbar'>
+    <Disclosure
+      as='nav'
+      className={`navbar ${
+        isScrolled ? "bg-blue-500 shadow-lg" : "bg-white"
+      } transition-colors duration-300`}>
       <>
         <div className='mx-auto max-w-7xl p-3 md:p-6 lg:px-8'>
           <div className='relative flex h-12 sm:h-20 items-center'>
