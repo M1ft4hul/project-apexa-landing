@@ -44,15 +44,12 @@ const Banner = () => {
               cascade
               damping={1e-1}
               triggerOnce={true}>
-              <p className='text-[#169091] lg:text-lg font-normal mb-2 lg:text-start text-center flex items-center space-x-2'>
-                <Image
-                  src={sehat}
-                  alt='sehat'
-                  width={25}
-                  height={25}
-                  className='mx-auto lg:mx-0'></Image>
-                <span>Kesehatan Anda, Prioritas Kami</span>
-              </p>
+              <div className='grid grid-rows-1 place-items-center lg:place-items-start'>
+                <p className='text-[#169091] lg:text-lg font-normal mt-2 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
+                  <Image src={sehat} alt='sehat' width={25} height={25}></Image>
+                   Kesehatan Anda, Prioritas Kami
+                </p>
+              </div>
             </Fade>
             <Fade
               direction={"up"}
