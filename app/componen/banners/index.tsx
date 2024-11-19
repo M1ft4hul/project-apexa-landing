@@ -146,11 +146,11 @@ const Banner = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <button
-                  type='button'
-                  className='px-6 py-6 mt-7 text-base font-medium text-white inline-flex items-center bg-[#59859D] hover:bg-[#59859D] focus:ring-4 focus:outline-none focus:ring-[#59859D] rounded-full text-center dark:bg-[#59859D] dark:hover:bg-[#44728C] dark:focus:ring-[#44728C]'>
+                <a
+                  href="/"
+                  className='px-6 py-5 mt-7 text-base font-sm text-white inline-flex items-center bg-[#59859D] hover:bg-[#59859D]  focus:outline-none rounded-full text-center dark:bg-[#59859D] dark:hover:bg-[#44728C]'>
                   Cari Dokter
-                </button>
+                </a>
               </Fade>
             </form>
           </div>

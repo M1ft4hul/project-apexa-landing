@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main>
         <Banner />
-        {/* <Work /> */}
+        <Work />
       </main>
     </>
   );

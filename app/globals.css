@@ -56,6 +56,11 @@ html {
     padding-right: 130px;
 }
 
+.penawaran {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
 .card-b {
     background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
 }
