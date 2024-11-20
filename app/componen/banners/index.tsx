@@ -45,7 +45,7 @@ const Banner = () => {
               damping={1e-1}
               triggerOnce={true}>
               <div className='grid grid-rows-1 place-items-center lg:place-items-start'>
-                <p className='text-[#169091] lg:text-lg font-normal mt-6 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
+                <p className='text-[#169091] lg:text-lg font-normal mt-8 mb-2 text-lightgrey md:4px lg:text-start text-center flex items-center space-x-2 gap-2'>
                   <Image src={sehat} alt='sehat' width={25} height={25}></Image>
                   Kesehatan Anda, Prioritas Kami
                 </p>
@@ -87,11 +87,10 @@ const Banner = () => {
                     <div className='flex flex-col md:flex-row gap-6'>
                       {/* Column 1: Cari Dokter */}
                       <div className='flex flex-col'>
-                        <label
-                          htmlFor='cari-dokter'
+                        <span
                           className='text-xl font-medium mb-2'>
                           Cari Dokter
-                        </label>
+                        </span>
                         <Fade
                           direction={"up"}
                           delay={1200}
@@ -112,11 +111,10 @@ const Banner = () => {
 
                       {/* Column 2: Pilih Hari */}
                       <div className='flex flex-col'>
-                        <label
-                          htmlFor='pilih-hari'
+                        <span
                           className='text-xl font-medium mb-2'>
                           Pilih Hari
-                        </label>
+                        </span>
                         <Fade
                           direction={"up"}
                           delay={1200}

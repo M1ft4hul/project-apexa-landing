@@ -61,6 +61,11 @@ html {
     padding-bottom: 10rem;
 }
 
+.next_back {
+    width: 60px;
+    height: 60px;
+}
+
 .card-b {
     background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
 }
