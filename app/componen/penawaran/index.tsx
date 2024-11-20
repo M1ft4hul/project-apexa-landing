@@ -8,7 +8,7 @@ import lanjut from "public/selanjutnya.png";
 
 const Work = () => {
   const slides = [
-    "/banner/carousel-1.svg",
+    "/banner/baner.png",
     "/banner/carousel-2.svg",
     "/banner/carousel-3.svg",
     "/banner/carousel-4.svg",
@@ -41,7 +41,7 @@ const Work = () => {
             cascade
             damping={1e-1}
             triggerOnce={true}>
-            <h3 className='text-3xl lg:text-5xl font-normal mb-5 text-lightgrey md:4px lg:text-center'>
+            <h3 className='text-3xl lg:text-5xl font-normal mb-12 text-lightgrey md:4px lg:text-center'>
               Penawaran Spesial
             </h3>
           </Fade>
@@ -53,7 +53,7 @@ const Work = () => {
             damping={1e-1}
             triggerOnce={true}>
             <div id='carousel-example' className='relative w-full'>
-              <div className='relative h-56 overflow-hidden rounded-3xl sm:h-64 xl:h-80 2xl:h-96'>
+              <div className='relative layout_slider overflow-hidden radiuss '>
                 {slides.map((slide, index) => (
                   <div
                     key={index}
@@ -76,7 +76,7 @@ const Work = () => {
                     key={index}
                     onClick={() => setActiveSlide(index)}
                     className={`h-3 w-3 rounded-full ${
-                      index === activeSlide ? "bg-blue-500" : "bg-gray-300"
+                      index === activeSlide ? "bg-[#169091]" : "bg-gray-300"
                     }`}
                     aria-label={`Slide ${index + 1}`}></button>
                 ))}

@@ -66,6 +66,16 @@ html {
     height: 60px;
 }
 
+.layout_slider {
+    height: 550px;
+    /* left: 93px; // tidak bisa responsive wkwkw
+    width: 1206px; */
+}
+
+.radiuss{
+    border-radius: 3rem;
+}
+
 .card-b {
     background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
 }
