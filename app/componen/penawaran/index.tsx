@@ -1,12 +1,36 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import baner_1 from "public/carousel-1.png";
 import back from "public/kembali.png";
 import lanjut from "public/selanjutnya.png";
 
 const Work = () => {
+  const slides = [
+    "/banner/carousel-1.svg",
+    "/banner/carousel-2.svg",
+    "/banner/carousel-3.svg",
+    "/banner/carousel-4.svg",
+  ];
+
+  const [activeSlide, setActiveSlide] = useState(0);
+  // Auto-slide setiap 5 detik
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval); // Bersihkan interval saat komponen di-unmount
+  }, [slides.length]);
+
+  const handleNext = () => {
+    setActiveSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div>
       <div className='mx-auto max-w-7xl penawaran px-6' id='about-section'>
@@ -28,136 +52,57 @@ const Work = () => {
             cascade
             damping={1e-1}
             triggerOnce={true}>
-            <div
-              id='default-carousel'
-              className='relative w-full'
-              data-carousel='slide'>
-              <div className='relative h-56 overflow-hidden rounded-lg md:h-96'>
-                <div
-                  className='hidden duration-700 ease-in-out'
-                  data-carousel-item>
-                  <Image
-                    src={baner_1}
-                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                    alt='...'></Image>
-                </div>
-                <div
-                  className='hidden duration-700 ease-in-out'
-                  data-carousel-item>
-                  <Image
-                    src={baner_1}
-                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                    alt='...'></Image>
-                </div>
-                <div
-                  className='hidden duration-700 ease-in-out'
-                  data-carousel-item>
-                  <Image
-                    src={baner_1}
-                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                    alt='...'></Image>
-                </div>
-                <div
-                  className='hidden duration-700 ease-in-out'
-                  data-carousel-item>
-                  <Image
-                    src={baner_1}
-                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                    alt='...'></Image>
-                </div>
-                <div
-                  className='hidden duration-700 ease-in-out'
-                  data-carousel-item>
-                  <Image
-                    src={baner_1}
-                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                    alt='...'></Image>
-                </div>
+            <div id='carousel-example' className='relative w-full'>
+              <div className='relative h-56 overflow-hidden rounded-3xl sm:h-64 xl:h-80 2xl:h-96'>
+                {slides.map((slide, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      index === activeSlide
+                        ? "opacity-100 z-10"
+                        : "opacity-0 z-0"
+                    }`}>
+                    <img
+                      src={slide}
+                      alt={`Slide ${index + 1}`}
+                      className='block w-full h-full object-cover'
+                    />
+                  </div>
+                ))}
               </div>
-              <div className='absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse'>
-                <button
-                  type='button'
-                  className='w-3 h-3 rounded-full'
-                  aria-current='true'
-                  aria-label='Slide 1'
-                  data-carousel-slide-to='0'></button>
-                <button
-                  type='button'
-                  className='w-3 h-3 rounded-full'
-                  aria-current='false'
-                  aria-label='Slide 2'
-                  data-carousel-slide-to='1'></button>
-                <button
-                  type='button'
-                  className='w-3 h-3 rounded-full'
-                  aria-current='false'
-                  aria-label='Slide 3'
-                  data-carousel-slide-to='2'></button>
-                <button
-                  type='button'
-                  className='w-3 h-3 rounded-full'
-                  aria-current='false'
-                  aria-label='Slide 4'
-                  data-carousel-slide-to='3'></button>
-                <button
-                  type='button'
-                  className='w-3 h-3 rounded-full'
-                  aria-current='false'
-                  aria-label='Slide 5'
-                  data-carousel-slide-to='4'></button>
+              <div className='absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse'>
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveSlide(index)}
+                    className={`h-3 w-3 rounded-full ${
+                      index === activeSlide ? "bg-blue-500" : "bg-gray-300"
+                    }`}
+                    aria-label={`Slide ${index + 1}`}></button>
+                ))}
               </div>
               <button
-                type='button'
-                className='absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
-                data-carousel-prev>
-                <span className='inline-flex items-center justify-center next_back rounded-full bg-white/30 dark:bg-[#F2F7FD] group-hover:bg-white/50 dark:group-hover:bg-[#F2F7FD] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-[#185EC8] group-focus:outline-none'>
-                  {/* <svg
-                    className='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
-                    aria-hidden='true'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 6 10'>
-                    <path
-                      stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
-                      d='M5 1 1 5l4 4'
-                    />
-                  </svg> */}
+                onClick={handlePrev}
+                className='group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none'>
+                <span className='inline-flex next_back items-center justify-center rounded-full bg-[#F2F7FD] group-hover:bg-[#E2ECF9] group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-[#E2ECF9] dark:group-hover:bg-[#E2ECF9] dark:group-focus:ring-[#D1E1F7]'>
                   <Image
                     src={back}
                     alt='kembali'
                     width={14}
                     height={16}></Image>
-                  <span className='sr-only'>Previous</span>
+                  <span className='hidden'>Previous</span>
                 </span>
               </button>
               <button
-                type='button'
-                className='absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none'
-                data-carousel-next>
-                <span className='inline-flex items-center justify-center next_back rounded-full bg-white/30 dark:bg-[#F2F7FD] group-hover:bg-white/50 dark:group-hover:bg-[#F2F7FD] group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-[#185EC8] group-focus:outline-none'>
-                  {/* <svg
-                    className='w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180'
-                    aria-hidden='true'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 6 10'>
-                    <path
-                      stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='2'
-                      d='m1 9 4-4-4-4'
-                    />
-                  </svg> */}
+                onClick={handleNext}
+                className='group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none'>
+                <span className='inline-flex next_back items-center justify-center rounded-full bg-[#F2F7FD] group-hover:bg-[#E2ECF9] group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-[#E2ECF9] dark:group-hover:bg-[#E2ECF9] dark:group-focus:ring-[#D1E1F7]'>
                   <Image
                     src={lanjut}
                     alt='selanjutnya'
                     width={14}
                     height={16}></Image>
-                  <span className='sr-only'>Next</span>
+                  <span className='hidden'>Next</span>
                 </span>
               </button>
             </div>
