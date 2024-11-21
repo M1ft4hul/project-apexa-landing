@@ -34,7 +34,7 @@ const Work = () => {
   return (
     <div>
       <div className='mx-auto max-w-7xl penawaran px-6' id='about-section'>
-        <div className='text-center mb-14'>
+        <div className='text-center'>
           <Fade
             direction={"up"}
             delay={400}

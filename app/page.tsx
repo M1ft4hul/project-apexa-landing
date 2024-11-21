@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Banner from "./componen/banners/index";
 import Work from "./componen/penawaran";
+import Fitur from "./componen/keunggulan";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main>
         <Banner />
         <Work />
+        <Fitur />
       </main>
     </>
   );
