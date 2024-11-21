@@ -50,7 +50,7 @@ const News = () => {
                 damping={1e-1}
                 triggerOnce={true}>
                 <a
-                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  className='flex flex-col group rounded-s-3xl rounded-e-3xl bg-white shadow-2xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
                   <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
@@ -79,7 +79,7 @@ const News = () => {
                 damping={1e-1}
                 triggerOnce={true}>
                 <a
-                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  className='flex flex-col group bg-white shadow-2xl rounded-s-3xl rounded-e-3xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
                   <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
@@ -108,7 +108,7 @@ const News = () => {
                 damping={1e-1}
                 triggerOnce={true}>
                 <a
-                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  className='flex flex-col group bg-white shadow-2xl rounded-s-3xl rounded-e-3xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
                   <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
