@@ -27,15 +27,26 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                  {/* Kotak buat gambar*/}
+                  <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
+                    <img
+                      src='/banner/prescription.png'
+                      alt='Heart'
+                      width={39}
+                      height={45}
+                    />
+                  </div>
+
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                      Noteworthy technology acquisitions 2021
+                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                      Heart & Lung Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-gray-700'>
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                    Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
+                    amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
+                    ipsum dolor
                   </p>
                   <a
                     href='#'
@@ -51,15 +62,26 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                  {/* Kotak buat gambar*/}
+                  <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
+                    <img
+                      src='/banner/diabetes.png'
+                      alt='Heart'
+                      width={39}
+                      height={45}
+                    />
+                  </div>
+
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                      Noteworthy technology acquisitions 2021
+                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                      Orthopedics Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-gray-700'>
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                    Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
+                    amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
+                    ipsum dolor
                   </p>
                   <a
                     href='#'
@@ -75,15 +97,26 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                  {/* Kotak buat gambar*/}
+                  <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
+                    <img
+                      src='/banner/trauma.png'
+                      alt='Heart'
+                      width={35}
+                      height={45}
+                    />{" "}
+                  </div>
+
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                      Noteworthy technology acquisitions 2021
+                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                      Trauma Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-gray-700'>
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                    Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
+                    amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
+                    ipsum dolor
                   </p>
                   <a
                     href='#'
