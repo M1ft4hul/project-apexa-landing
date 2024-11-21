@@ -58,7 +58,11 @@ html {
 
 .penawaran {
     padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
+}
+
+.layanan {
+    padding-top: 7rem;
 }
 
 .next_back {

@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Layanan = () => {
   return (
     <div>
-      <div className='mx-auto max-w-7xl penawaran px-6'>
+      <div className='mx-auto max-w-7xl layanan px-6'>
         <div className='text-center'>
           <Fade
             direction={"up"}
