@@ -33,7 +33,7 @@ const Work = () => {
 
   return (
     <div>
-      <div className='mx-auto max-w-7xl penawaran px-6' id='about-section'>
+      <div className='mx-auto max-w-7xl penawaran px-6'>
         <div className='text-center'>
           <Fade
             direction={"up"}
