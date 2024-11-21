@@ -52,7 +52,7 @@ const News = () => {
                 <a
                   className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
-                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                  <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
                       className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
                       src='/berita/berita_1.png'
@@ -81,7 +81,7 @@ const News = () => {
                 <a
                   className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
-                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                  <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
                       className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
                       src='/berita/berita_2.png'
@@ -110,7 +110,7 @@ const News = () => {
                 <a
                   className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
                   href='#'>
-                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                  <div className='relative w-[510px] h-[269px] overflow-hidden rounded-t-xl'>
                     <img
                       className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
                       src='/berita/berita_3.png'
