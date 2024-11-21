@@ -39,7 +39,7 @@ const Layanan = () => {
                   </div>
 
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                    <h5 className='mb-3 text-2xl mt-8 font-medium tracking-tight text-gray-900 text-left'>
                       Heart & Lung Center
                     </h5>
                   </a>
@@ -74,7 +74,7 @@ const Layanan = () => {
                   </div>
 
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                    <h5 className='mb-3 text-2xl mt-8 font-medium tracking-tight text-gray-900 text-left'>
                       Orthopedics Center
                     </h5>
                   </a>
@@ -109,7 +109,7 @@ const Layanan = () => {
                   </div>
 
                   <a href='#'>
-                    <h5 className='mb-2 text-2xl font-medium tracking-tight text-gray-900 text-left'>
+                    <h5 className='mb-3 text-2xl mt-8 font-medium tracking-tight text-gray-900 text-left'>
                       Trauma Center
                     </h5>
                   </a>
