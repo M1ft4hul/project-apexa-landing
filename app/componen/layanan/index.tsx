@@ -27,8 +27,8 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
-                  {/* Kotak buat gambar*/}
+                <div className='max-w-sm p-[40px] bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                  {/* Kotak buat gambar */}
                   <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
                     <img
                       src='/banner/prescription.png'
@@ -62,7 +62,7 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                <div className='max-w-sm p-[40px] bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
                   {/* Kotak buat gambar*/}
                   <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
                     <img
@@ -97,7 +97,7 @@ const Layanan = () => {
                 cascade
                 damping={1e-1}
                 triggerOnce={true}>
-                <div className='max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
+                <div className='max-w-sm p-[40px] bg-white border border-gray-200 rounded-3xl shadow transition duration-300 hover:border-blue-500 cursor-pointer'>
                   {/* Kotak buat gambar*/}
                   <div className='w-16 h-16 bg-[#deedf2] rounded-2xl mb-4 flex items-center justify-center'>
                     <img
