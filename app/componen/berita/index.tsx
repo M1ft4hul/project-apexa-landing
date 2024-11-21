@@ -31,12 +31,44 @@ const News = () => {
                 </h2>
               </div>
 
-              {/* Tombol View More di baris kedua */}
-              <a
-                className='px-8 py-3 bg-blue-700 flex text-white sm:w-auto w-fit rounded-lg hover:bg-blue-700 transition duration-300'
-                href=''>
-                View more
-              </a>
+              {/* Tombol Back dan Next */}
+              <div className='flex items-center justify-center space-x-4 mt-4'>
+                {/* Tombol Back */}
+                <button className='w-[60px] h-[60px] flex items-center justify-center rounded-full bg-[#e0e8f4] hover:bg-[#169091] transition-all duration-300 group'>
+                  <img
+                    src='/berita/back.png'
+                    width={16}
+                    height={16}
+                    alt='Back'
+                    className='w-6 h-6 transition duration-300 group-hover:hidden'
+                  />
+                  <img
+                    src='/berita/back-putih.png'
+                    width={16}
+                    height={16}
+                    alt='Back Hover'
+                    className='w-6 h-6 transition duration-300 hidden group-hover:inline-block'
+                  />
+                </button>
+
+                {/* Tombol Next */}
+                <button className='w-[60px] h-[60px] flex items-center justify-center rounded-full bg-[#e0e8f4] hover:bg-[#169091] transition-all duration-300 group'>
+                  <img
+                    src='/berita/maju.png'
+                    width={16}
+                    height={16}
+                    alt='Next'
+                    className='w-6 h-6 transition duration-300 group-hover:hidden'
+                  />
+                  <img
+                    src='/berita/maju-putih.png'
+                    width={16}
+                    height={16}
+                    alt='Next Hover'
+                    className='w-6 h-6 transition duration-300 hidden group-hover:inline-block'
+                  />
+                </button>
+              </div>
             </Fade>
           </div>
           {/* data berita */}
