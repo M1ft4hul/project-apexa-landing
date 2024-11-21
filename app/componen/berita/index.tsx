@@ -61,6 +61,40 @@ const News = () => {
                   </div>
                   {/* konten berita */}
                   <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    {/* Baris dengan dua kolom */}
+                    <div className='flex items-center justify-between mb-5'>
+                      {/* Kolom 1 - Kalender */}
+                      <div className='flex items-center space-x-2'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-5 h-5 text-gray-700'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={2}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
+                          />
+                        </svg>
+                        <span className='text-sm text-gray-700'>
+                          October 19, 2022
+                        </span>
+                      </div>
+
+                      {/* Kolom 3 - User */}
+                      <div className='flex items-center space-x-2'>
+                        <img
+                          src='/berita/user.svg'
+                          alt='icon user'
+                          className='w-5 h-5 text-gray-700'
+                        />
+                        <span className='text-sm text-gray-700'>Mesbah</span>
+                      </div>
+                    </div>
+
+                    {/* Heading utama */}
                     <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
                       Smile Brighter Smile Healthier Your Dental Destination
                     </h3>
@@ -92,6 +126,7 @@ const News = () => {
                         </div>
                       </button>
                     </div>
+                    {/* end tombol */}
                   </div>
                   {/* end */}
                 </a>
@@ -116,6 +151,40 @@ const News = () => {
                   </div>
                   {/* konten berita */}
                   <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    {/* Baris dengan dua kolom */}
+                    <div className='flex items-center justify-between mb-5'>
+                      {/* Kolom 1 - Kalender */}
+                      <div className='flex items-center space-x-2'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-5 h-5 text-gray-700'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={2}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
+                          />
+                        </svg>
+                        <span className='text-sm text-gray-700'>
+                          October 19, 2022
+                        </span>
+                      </div>
+
+                      {/* Kolom 3 - User */}
+                      <div className='flex items-center space-x-2'>
+                        <img
+                          src='/berita/user.svg'
+                          alt='icon user'
+                          className='w-5 h-5 text-gray-700'
+                        />
+                        <span className='text-sm text-gray-700'>Mesbah</span>
+                      </div>
+                    </div>
+
+                    {/* Heading utama */}
                     <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
                       Bringing Confidence to Your Smile Dental Excellence
                     </h3>
@@ -147,6 +216,7 @@ const News = () => {
                         </div>
                       </button>
                     </div>
+                    {/* end tombol */}
                   </div>
                   {/* end */}
                 </a>
@@ -171,6 +241,40 @@ const News = () => {
                   </div>
                   {/* konten berita */}
                   <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    {/* Baris dengan dua kolom */}
+                    <div className='flex items-center justify-between mb-5'>
+                      {/* Kolom 1 - Kalender */}
+                      <div className='flex items-center space-x-2'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-5 h-5 text-gray-700'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={2}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'
+                          />
+                        </svg>
+                        <span className='text-sm text-gray-700'>
+                          October 19, 2022
+                        </span>
+                      </div>
+
+                      {/* Kolom 3 - User */}
+                      <div className='flex items-center space-x-2'>
+                        <img
+                          src='/berita/user.svg'
+                          alt='icon user'
+                          className='w-5 h-5 text-gray-700'
+                        />
+                        <span className='text-sm text-gray-700'>Mesbah</span>
+                      </div>
+                    </div>
+
+                    {/* Heading utama */}
                     <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
                       Painting a Brighter Health Landscape
                     </h3>
@@ -202,6 +306,7 @@ const News = () => {
                         </div>
                       </button>
                     </div>
+                    {/* end tombol */}
                   </div>
                   {/* end */}
                 </a>
