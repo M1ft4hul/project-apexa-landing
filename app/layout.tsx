@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./componen/layout/header";
+import Footer from "./componen/footer/Footer";
 
 export const metadata: Metadata = {
   title: "RS. Hj.Bunda Halimah",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
