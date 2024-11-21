@@ -59,15 +59,41 @@ const News = () => {
                       alt='Card Image'
                     />
                   </div>
-                  <div className='p-4 md:p-5'>
-                    <h3 className='text-lg font-bold text-gray-800'>
-                      Card title
+                  {/* konten berita */}
+                  <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
+                      Smile Brighter Smile Healthier Your Dental Destination
                     </h3>
-                    <p className='mt-1 text-gray-500'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p className='mt-1 text-[#949494] leading-relaxed'>
+                      Explore the dynamic commerce through our insightful blogs.
+                      Learn Explore the dynamic
                     </p>
+
+                    {/* tombol */}
+                    <div className='flex items-center mt-8 mb-5'>
+                      <button className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-[#169091]'>
+                        <span className='group-hover:no-underline'>
+                          Read More
+                        </span>
+                        <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-[#169091] transition-all duration-300'>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            strokeWidth={3}>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              d='M12 4v16m8-8H4'
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
                   </div>
+                  {/* end */}
                 </a>
               </Fade>
 
@@ -88,15 +114,41 @@ const News = () => {
                       alt='Card Image'
                     />
                   </div>
-                  <div className='p-4 md:p-5'>
-                    <h3 className='text-lg font-bold text-gray-800'>
-                      Card title
+                  {/* konten berita */}
+                  <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
+                      Bringing Confidence to Your Smile Dental Excellence
                     </h3>
-                    <p className='mt-1 text-gray-500'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p className='mt-1 text-[#949494] leading-relaxed'>
+                      Explore the dynamic commerce through our insightful blogs.
+                      Learn Explore the dynamic
                     </p>
+
+                    {/* tombol */}
+                    <div className='flex items-center mt-8 mb-5'>
+                      <button className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-[#169091]'>
+                        <span className='group-hover:no-underline'>
+                          Read More
+                        </span>
+                        <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-[#169091] transition-all duration-300'>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            strokeWidth={3}>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              d='M12 4v16m8-8H4'
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
                   </div>
+                  {/* end */}
                 </a>
               </Fade>
 
@@ -117,15 +169,41 @@ const News = () => {
                       alt='Card Image'
                     />
                   </div>
-                  <div className='p-4 md:p-5'>
-                    <h3 className='text-lg font-bold text-gray-800'>
-                      Card title
+                  {/* konten berita */}
+                  <div className='p-4 md:p-5 ml-5 mt-2 mr-5 md-5'>
+                    <h3 className='text-xl leading-relaxed mb-5 font-bold text-gray-800'>
+                      Painting a Brighter Health Landscape
                     </h3>
-                    <p className='mt-1 text-gray-500'>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <p className='mt-1 text-[#949494] leading-relaxed'>
+                      Explore the dynamic commerce through our insightful blogs.
+                      Learn Explore the dynamic
                     </p>
+
+                    {/* tombol */}
+                    <div className='flex items-center mt-8 mb-5'>
+                      <button className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-[#169091]'>
+                        <span className='group-hover:no-underline'>
+                          Read More
+                        </span>
+                        <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-[#169091] transition-all duration-300'>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                            fill='none'
+                            viewBox='0 0 24 24'
+                            stroke='currentColor'
+                            strokeWidth={3}>
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              d='M12 4v16m8-8H4'
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
                   </div>
+                  {/* end */}
                 </a>
               </Fade>
             </div>
