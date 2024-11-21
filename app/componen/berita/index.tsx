@@ -39,9 +39,101 @@ const News = () => {
               </a>
             </Fade>
           </div>
+          {/* data berita */}
+          <div className='flex justify-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+              {/* Card 1 */}
+              <Fade
+                direction={"up"}
+                delay={400}
+                cascade
+                damping={1e-1}
+                triggerOnce={true}>
+                <a
+                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  href='#'>
+                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                    <img
+                      className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
+                      src='/berita/berita_1.png'
+                      alt='Card Image'
+                    />
+                  </div>
+                  <div className='p-4 md:p-5'>
+                    <h3 className='text-lg font-bold text-gray-800'>
+                      Card title
+                    </h3>
+                    <p className='mt-1 text-gray-500'>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </a>
+              </Fade>
+
+              {/* Card 2 */}
+              <Fade
+                direction={"up"}
+                delay={400}
+                cascade
+                damping={1e-1}
+                triggerOnce={true}>
+                <a
+                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  href='#'>
+                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                    <img
+                      className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
+                      src='/berita/berita_2.png'
+                      alt='Card Image'
+                    />
+                  </div>
+                  <div className='p-4 md:p-5'>
+                    <h3 className='text-lg font-bold text-gray-800'>
+                      Card title
+                    </h3>
+                    <p className='mt-1 text-gray-500'>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </a>
+              </Fade>
+
+              {/* Card 3 */}
+              <Fade
+                direction={"up"}
+                delay={400}
+                cascade
+                damping={1e-1}
+                triggerOnce={true}>
+                <a
+                  className='flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition'
+                  href='#'>
+                  <div className='relative w-[410px] h-[269px] overflow-hidden rounded-t-xl'>
+                    <img
+                      className='size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl'
+                      src='/berita/berita_3.png'
+                      alt='Card Image'
+                    />
+                  </div>
+                  <div className='p-4 md:p-5'>
+                    <h3 className='text-lg font-bold text-gray-800'>
+                      Card title
+                    </h3>
+                    <p className='mt-1 text-gray-500'>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </a>
+              </Fade>
+            </div>
+          </div>
+
+          {/* end berita */}
         </div>
       </div>
-
       {/* end */}
     </div>
   );
