@@ -43,16 +43,36 @@ const Layanan = () => {
                       Heart & Lung Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                  <p className='mb-3 font-normal leading-relaxed text-[#949494] text-left'>
                     Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
                     amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
                     ipsum dolor
                   </p>
-                  <a
-                    href='#'
-                    className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>
-                    Read more
-                  </a>
+                  <div className='flex items-center mt-8'>
+                    <a
+                      href=''
+                      className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-blue-700'>
+                      <span className='group-hover:no-underline'>
+                        Read More
+                      </span>
+                      <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-blue-700 transition-all duration-300'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={3}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M12 4v16m8-8H4'
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  {/* end */}
                 </div>
               </Fade>
               {/* layanan 2 */}
@@ -78,16 +98,36 @@ const Layanan = () => {
                       Orthopedics Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                  <p className='mb-3 font-normal leading-relaxed text-[#949494] text-left'>
                     Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
                     amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
                     ipsum dolor
                   </p>
-                  <a
-                    href='#'
-                    className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>
-                    Read more
-                  </a>
+                  <div className='flex items-center mt-8'>
+                    <a
+                      href=''
+                      className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-blue-700'>
+                      <span className='group-hover:no-underline'>
+                        Read More
+                      </span>
+                      <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-blue-700 transition-all duration-300'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={3}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M12 4v16m8-8H4'
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  {/* end */}
                 </div>
               </Fade>
               {/* layanan 3 */}
@@ -113,16 +153,36 @@ const Layanan = () => {
                       Trauma Center
                     </h5>
                   </a>
-                  <p className='mb-3 font-normal text-[#949494] text-left'>
+                  <p className='mb-3 font-normal leading-relaxed text-[#949494] text-left'>
                     Lorem ipsum dolor sit consectetur adipiscing elit. Sed sit
                     amet rcus nunc. Duis egestas ac ante sed tincidunt. Lorem
                     ipsum dolor
                   </p>
-                  <a
-                    href='#'
-                    className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>
-                    Read more
-                  </a>
+                  <div className='flex items-center mt-8'>
+                    <a
+                      href=''
+                      className='flex items-center space-x-2 font-semibold text-sm text-gray-700 transition duration-300 group hover:text-blue-700'>
+                      <span className='group-hover:no-underline'>
+                        Read More
+                      </span>
+                      <div className='w-5 h-5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-blue-700 transition-all duration-300'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='w-3 h-3 text-gray-700 group-hover:text-white transition duration-300'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                          strokeWidth={3}>
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M12 4v16m8-8H4'
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  {/* end */}
                 </div>
               </Fade>
             </div>
