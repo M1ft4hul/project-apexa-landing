@@ -177,7 +177,7 @@ const Footer = () => {
                 <a
                   className='flex mb-8 gap-3 items-center'
                   href='mailto:info@mobileapp.com'>
-                  <p className='text-white text-base'>
+                  <p className='text-white font-light text-base'>
                     Custom Software Development Tailored Solutions for Your
                     Business Custom Software{" "}
                   </p>
