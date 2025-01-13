@@ -21,7 +21,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Temukan Dokter", href: "#home-section", current: false },
   { name: "Layanan", href: "#layanan-section", current: false },
-  { name: "Artikel saya", href: "#cook-section", current: false },
+  { name: "Artikel", href: "#cook-section", current: false },
   { name: "Kontak", href: "#gallery-section", current: false },
 ];
 
